@@ -66,7 +66,5 @@ function collect_stock_data(stock_name) {
 
 collect_stock_data(STOCK);
 
-while (true) {
-  // set to run again after 24 hours
-  setTimeout(function(){ collect_stock_data(STOCK); }, 86400000);
-}
+// set to run again after 24 hours
+setInterval(function(){ collect_stock_data(STOCK); }, 86400000);
