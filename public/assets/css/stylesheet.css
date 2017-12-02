@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.report {
+  padding: 20px;
+}
+
+.graph {
+  margin-top: 30px;
+}
+
+.brush .extent {
+  stroke: #000;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+.brush .background {
+  fill: #ddd;
+}
