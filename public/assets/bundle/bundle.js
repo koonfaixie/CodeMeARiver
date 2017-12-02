@@ -29797,7 +29797,7 @@ var Stock = function (_React$Component) {
           stock_name: stock_obj.stock,
           stock_data: stock_obj.data,
           sorted_keys: sorted_keys,
-          xScale: d3.time.scale().domain([new Date(sorted_keys[0]), new Date(sorted_keys[sorted_keys.length - 1])]).range([0, 1200]),
+          xScale: d3.time.scale().domain([new Date(sorted_keys[0]), new Date(sorted_keys[sorted_keys.length - 1])]).range([0, 1200 - 120]),
           xScaleBrush: d3.time.scale().domain([new Date(sorted_keys[0]), new Date(sorted_keys[sorted_keys.length - 1])]).range([0, 1200])
         });
       }).catch(function () {
@@ -29875,7 +29875,7 @@ var Stock = function (_React$Component) {
               }],
               width: 1200,
               height: 300,
-              margin: { top: 0, bottom: 0, left: 0, right: 0 },
+              margin: { top: 30, bottom: 50, left: 100, right: 0 },
               xScale: this.state.xScale,
               tooltipHtml: this.tooltip.bind(this),
               xAxis: { label: 'date', tickFormat: d3.time.format("%m/%d") },
